@@ -1,14 +1,20 @@
 {
   "name": "calendar",
-  "short_name": "calendar",
-  "start_url": "/",
+  "short_name": "Line Calendar",
+  "start_url": "/calendar/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
   "theme_color": "#673ab8",
   "icons": [
     {
-      "src": "/assets/icon.png",
+      "src": "/calendar/assets/icon.png",
+      "type": "image/png",
+      "purpose": "maskable",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/calendar/assets/icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
