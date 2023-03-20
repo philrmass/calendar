@@ -87,6 +87,21 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "G98f":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(h, Fragment) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Home; });
+/* harmony import */ var _package_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("QP3f");
+var _package_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t("QP3f", 1);
+
+function Home() {
+  return h(Fragment, null, h("div", null, "Calendar"), h("div", null, "v".concat(_package_json__WEBPACK_IMPORTED_MODULE_0__[/* version */ "a"])));
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("HteQ")["h"], __webpack_require__("HteQ")["Fragment"]))
+
+/***/ }),
+
 /***/ "HteQ":
 /***/ (function(module, exports) {
 
@@ -103,16 +118,25 @@ module.exports = require("preact");
 
 /***/ }),
 
+/***/ "QP3f":
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"a\":\"0.1.0\"}");
+
+/***/ }),
+
 /***/ "QfWi":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(h) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
-/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("MV5A");
+/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("G98f");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("MV5A");
+
 
 function App() {
-  return h("div", null, h("h1", null, "Hello, World!"));
+  return h(_components_Home__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"], null);
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("HteQ")["h"]))
 
