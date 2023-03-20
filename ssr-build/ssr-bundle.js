@@ -91,14 +91,31 @@ module.exports =
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(h, Fragment) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Home; });
+/* WEBPACK VAR INJECTION */(function(h) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Home; });
 /* harmony import */ var _package_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("QP3f");
 var _package_json__WEBPACK_IMPORTED_MODULE_0___namespace = /*#__PURE__*/__webpack_require__.t("QP3f", 1);
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function Home() {
-  return h(Fragment, null, h("div", null, "Calendar"), h("div", null, "v".concat(_package_json__WEBPACK_IMPORTED_MODULE_0__[/* version */ "a"])));
+  var getPermission = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator(function* () {
+      var result = yield Notification.requestPermission();
+      if (result === 'granted') {
+        console.log('SHOW');
+      } else {
+        console.log("getPermission [".concat(result, "]"));
+      }
+    });
+    return function getPermission() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+  return h("div", null, h("div", null, "Calendar"), h("div", null, "v".concat(_package_json__WEBPACK_IMPORTED_MODULE_0__[/* version */ "a"])), h("button", {
+    onClick: getPermission
+  }, "Show Notifications"));
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("HteQ")["h"], __webpack_require__("HteQ")["Fragment"]))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("HteQ")["h"]))
 
 /***/ }),
 
